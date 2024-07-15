@@ -8,14 +8,14 @@ public class SingletonConnection {
 private static Connection connection;
 		static {
 			String url= "jdbc:mysql://localhost:3306/Activscientifiques?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-			String user="Hiba";
-			String password="Hiba123456789.";
+			String user="***";
+			String password="***";
 			
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				 
 				connection=DriverManager.getConnection(url, user, password);
-				System.out.println("connexion établie !!! ");
+				System.out.println("connexion Ã©tablie !!! ");
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
